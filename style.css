@@ -98,6 +98,10 @@ p {
   margin-bottom: 1.5em;
   text-transform: none;
 }
+.fixTexto {
+  text-align: justify;
+  text-justify: inter-word;
+}
 img {
   display: block;
   width: 100%;
