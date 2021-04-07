@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
+
+body {
+  border: 8px solid black;
+  margin: 0px;
+}
+.inner-container,
+.outer-container {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.inner-container {
+  max-width: 80em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.outer-container {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.space-bottom {
+  margin-bottom: 4em;
+}
+
+.nav-container {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-logo {
+  width: 32px;
+  height: 32px;
+  display: block;
+  border: 4px solid black;
+  position: relative;
+}
+
+.site-logo .logo-text {
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  font-weight: bold;
+  font-size: 13px;
+}
+
+a {
+  color: black;
+  margin-bottom: 1.25em;
+}
+.nav-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-right li {
+  margin-bottom: 0;
+}
+.list-item {
+  padding: 0;
+  list-style: none;
+}
+.list-item:not(:first-child) {
+  margin-left: 2em;
+}
+.list-item a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  color: black;
+  text-decoration: none;
+}
+li {
+  margin-bottom: 1.5em;
+  padding-bottom: 2em;
+}
+h1,
+h2,
+li {
+  font-weight: bold;
+  margin: 0;
+}
+.hero {
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 3em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.65em;
+  line-height: 1em;
+  margin-bottom: 2em;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 2em;
+  margin-bottom: 1.5em;
+  text-transform: none;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2em;
+  background-color: #f0eeee;
+}
+
+.border {
+  border-top: 1px solid #f0eeee;
+  padding-top: 3em;
+}
+footer {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding-bottom: 4em;
+}
+
+@media (min-width: 600px) {
+  .site-logo {
+    width: 50px;
+    height: 50px;
+    border: 5px solid black;
+  }
+}
+.outer-container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
